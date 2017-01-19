@@ -1,9 +1,10 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from "@angular/common";
 import {FormsModule} from '@angular/forms';
 
 import {ShoppingListComponent} from './shopping-list.component';
 import {ShoppingListAddComponent} from './shopping-list-add.component';
+import {shoppingListRouting} from "./shopping-list.routing";
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {ShoppingListAddComponent} from './shopping-list-add.component';
   ],
   imports: [
     FormsModule,
-    CommonModule
+    SharedModule,
+    shoppingListRouting
   ],
   providers: []
 })
